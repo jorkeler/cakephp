@@ -19,6 +19,8 @@ class UsuariosTable extends Table{
         
     }
     
-   
+    public function validationDefault(Validator $validator) {
+        $validator->notEmpty('username','nombre de usuario obligatorio');
+    }
     
 }
